@@ -8,7 +8,10 @@ const Navigation = () => {
   return (
     <nav className="bg-primary p-4 shadow-lg">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
-        <Link to="/" className="text-white text-xl font-bold">CareerBoost AI</Link>
+        <Link to="/" className="flex items-center space-x-2">
+          {/* Add logo image here once you have it in your assets */}
+          <span className="text-white text-xl font-bold">CareerJoy Connect</span>
+        </Link>
         <div className="flex space-x-4">
           <Link
             to="/resume"
