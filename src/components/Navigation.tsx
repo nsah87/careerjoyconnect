@@ -9,8 +9,11 @@ const Navigation = () => {
     <nav className="bg-primary p-4 shadow-lg">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
-          {/* Add logo image here once you have it in your assets */}
-          <span className="text-white text-xl font-bold">CareerJoy Connect</span>
+          <img 
+            src="/lovable-uploads/c4a1b998-9447-4e57-a121-6e1c9f9f3da8.png" 
+            alt="CareerJoy Connect Logo" 
+            className="h-10 w-auto"
+          />
         </Link>
         <div className="flex space-x-4">
           <Link
