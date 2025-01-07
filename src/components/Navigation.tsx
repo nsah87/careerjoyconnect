@@ -10,7 +10,7 @@ const Navigation = () => {
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
           <img 
-            src="/lovable-uploads/c4a1b998-9447-4e57-a121-6e1c9f9f3da8.png" 
+            src="/lovable-uploads/ea0c5a3c-5ef4-43c9-8954-7c416a7d72ee.png" 
             alt="CareerJoy Connect Logo" 
             className="h-10 w-auto"
           />
@@ -21,7 +21,7 @@ const Navigation = () => {
             className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
               isActive("/resume")
                 ? "bg-secondary text-white"
-                : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                : "text-gray-300 hover:bg-primary-dark hover:text-white"
             }`}
           >
             Resume & Cover Letter
@@ -31,7 +31,7 @@ const Navigation = () => {
             className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
               isActive("/interview")
                 ? "bg-secondary text-white"
-                : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                : "text-gray-300 hover:bg-primary-dark hover:text-white"
             }`}
           >
             Interview Practice
@@ -41,7 +41,7 @@ const Navigation = () => {
             className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
               isActive("/companion")
                 ? "bg-secondary text-white"
-                : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                : "text-gray-300 hover:bg-primary-dark hover:text-white"
             }`}
           >
             Career Companion
@@ -51,7 +51,7 @@ const Navigation = () => {
             className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
               isActive("/insights")
                 ? "bg-secondary text-white"
-                : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                : "text-gray-300 hover:bg-primary-dark hover:text-white"
             }`}
           >
             Insights
