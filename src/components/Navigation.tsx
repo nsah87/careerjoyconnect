@@ -10,7 +10,7 @@ const Navigation = () => {
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
           <img 
-            src="/lovable-uploads/ea0c5a3c-5ef4-43c9-8954-7c416a7d72ee.png" 
+            src="/lovable-uploads/7fc628b5-3eb0-43a9-b31f-a3f52bcdae75.png" 
             alt="CareerJoy Connect Logo" 
             className="h-10 w-auto"
           />
