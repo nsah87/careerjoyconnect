@@ -1,38 +1,16 @@
 import { Link, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { removeBackground, loadImage } from "../utils/imageUtils";
-import { toast } from "sonner";
 
 const Navigation = () => {
   const location = useLocation();
-  const [logoUrl, setLogoUrl] = useState("/lovable-uploads/ea0c5a3c-5ef4-43c9-8954-7c416a7d72ee.png");
   
   const isActive = (path: string) => location.pathname === path;
-
-  useEffect(() => {
-    const processLogo = async () => {
-      try {
-        const response = await fetch(logoUrl);
-        const blob = await response.blob();
-        const img = await loadImage(blob);
-        const processedBlob = await removeBackground(img);
-        const processedUrl = URL.createObjectURL(processedBlob);
-        setLogoUrl(processedUrl);
-      } catch (error) {
-        console.error("Error processing logo:", error);
-        toast.error("Failed to process logo image");
-      }
-    };
-
-    processLogo();
-  }, []);
   
   return (
     <nav className="bg-primary p-4 shadow-lg">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
           <img 
-            src={logoUrl} 
+            src="/lovable-uploads/ea0c5a3c-5ef4-43c9-8954-7c416a7d72ee.png" 
             alt="CareerJoy Connect Logo" 
             className="h-10 w-auto"
           />
